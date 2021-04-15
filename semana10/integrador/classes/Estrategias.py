@@ -57,7 +57,7 @@ class Estrategia_CSV(Estrategia):
         with open(arquivo, newline='\n') as csvfile:
             reader = csv.DictReader(csvfile)
             for line in reader:
-                lista_registros.append({line['total'], line['vendido_total']})
+                lista_registros.append({line['total'], line['vendido_em']})
         return lista_registros
 
     def parametros_necessarios(self):

@@ -7,9 +7,9 @@ def carregar_credenciais(arquivo):
         with open(arquivo) as file:
             for line in file:
                 if line != '\n' or line != '#':
-                key, valor = line.split('==>')
-                valor = valor.replace('\n', '')
-                credenciais[key] = valor
+                    key, valor = line.split('==>')
+                    valor = valor.replace('\n', '')
+                    credenciais[key] = valor
     except FileNotFoundError:
         raise FileNotFoundError('Arquivo não encontrado: ' + arquivo)
     return credenciais
