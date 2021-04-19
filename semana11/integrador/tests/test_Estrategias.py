@@ -1,6 +1,6 @@
 from integrador.classes.Estrategias import Estrategia
-from integrador.classes.Estrategias import Estrategia_SQLite
-from integrador.classes.Estrategias import Estrategia_CSV
+from integrador.classes.Estrategias import Estrategia_Texto_1
+from integrador.classes.Estrategias import Estrategia_Texto_2
 import pytest
 
 
